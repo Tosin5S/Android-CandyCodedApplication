@@ -40,19 +40,20 @@
     <TextView
         android:id="@+id/text_view_phone"
         android:clickable="true"
-        android:onclick="createPhoneIntent"
+        android:onClick="createPhoneIntent"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
         android:gravity="center_vertical"
-        android:text="(012)345-6789"
+        android:text="@string/_012_345_6789"
         android:textColor="?android:attr/actionMenuTextColor"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="@+id/text_view_address"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_view_map" />
+        app:layout_constraintTop_toBottomOf="@+id/image_view_map"
+        android:focusable="true" />
 
     <TextView
         android:id="@+id/text_view_hours"
